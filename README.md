@@ -1,5 +1,7 @@
 # pisi-and-paks
 
+A wedding website hopefully worthy of the couple
+
 ## Project setup
 ```
 npm install
