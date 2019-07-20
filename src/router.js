@@ -16,10 +16,12 @@ export default new Router({
     {
       path: '/feed',
       name: 'feed',
-      // route level code-splitting
-      // this generates a separate chunk (feed.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "feed" */ './views/Feed.vue')
+    },
+    {
+      path: '/spot',
+      name: 'spot',
+      component: () => import(/* webpackChunkName: "spot" */ './views/Spot.vue')
     }
   ]
 })

@@ -1,5 +1,9 @@
 <template>
   <div class="home">
-    <h1>A placeholder with such-and-such.</h1>
+    <header>
+      <h1>Bulmad.</h1>
+    </header>
+
+    <section>Mjeu.</section>
   </div>
 </template>
