@@ -18,6 +18,8 @@
   --color-dark-3: #657B9D;
   --color-dark-4: #77B2BC;
   --color-dark-5: #FFF8F0;
+  --white: #FFF;
+  --black: #000;
 
   --color-primary: var(--color-light-0);
   --color-secondary: var(--color-light-1); /*light-4*/

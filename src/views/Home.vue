@@ -1,8 +1,5 @@
 <template>
   <div class="home">
-    <header>
-      <h1>Bulmad, neh</h1>
-    </header>
 
     <section>
       <css-doodle>
@@ -10,7 +7,7 @@
           @grid: 16 / 100vw;
           overflow: hidden;
         }
-        <!-- margin: -.5px; -->
+        margin: -.5px;
         @random { border-top: 1px solid #60569e; }
         @random { border-left: 1px solid #60569e; }
         @random(.2) {
@@ -22,17 +19,16 @@
         }
       </css-doodle>
       <div class="text-ontop">
-        <h2>Bulmad, neh</h2>
+        <h1>Bulmad, neh</h1>
       </div>
     </section>
 
     <section>
       <css-doodle>
         :doodle {
-          @grid: 16 / 100vw;
+          @grid: 16 / 100vmax;
           overflow: hidden;
         }
-        <!-- margin: -.5px; -->
         @random { border-top: 1px solid #60569e; }
         @random { border-left: 1px solid #60569e; }
         @random(.2) {
@@ -43,7 +39,7 @@
           }
         }
       </css-doodle>
-      <div class="text-ontop">
+      <div class="text-ontop color-white">
         <h2>Ikke veel</h2>
       </div>
     </section>
@@ -54,6 +50,8 @@
           @grid: 20 / 100vmax;
           background: #0a0c27;
           font-family: sans-serif;
+          @grid: 16 / 100vmax;
+          overflow: hidden;
         }
         :after {
           content: \@hex(@r(0x2500, 0x257f));
@@ -61,7 +59,9 @@
           font-size: 5vmax;
         }
       </css-doodle>
-      <h2>pidu.</h2>
+      <div class="text-ontop">
+        <p>piduu</p>
+      </div>
     </section>
   </div>
 </template>
@@ -74,7 +74,9 @@ section {
   position: absolute;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 </style>
