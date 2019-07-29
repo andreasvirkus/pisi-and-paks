@@ -15,11 +15,14 @@
             content: '';
             background: hsl(@rand(360), 60%, 70%);
             @size: @rand(20px);
+            transition: background .2s ease-in-out;
           }
         }
       </css-doodle>
       <div class="text-ontop">
-        <h1>Bulmad, neh</h1>
+        <div class="text-background--faded">
+          <h1>pulmad, noh.</h1>
+        </div>
       </div>
     </section>
 
@@ -39,44 +42,80 @@
           }
         }
       </css-doodle>
-      <div class="text-ontop color-white">
-        <h2>Ikke veel</h2>
+      <div class="text-ontop">
+        <div class="text-background--faded">
+          <p>ikke veel jahun pulmadest</p>
+        </div>
       </div>
     </section>
 
     <section>
       <css-doodle>
         :doodle {
-          @grid: 20 / 100vmax;
-          background: #0a0c27;
-          font-family: sans-serif;
-          @grid: 16 / 100vmax;
+          @grid: 21 / 100vmax;
+          --h: @rand(360);
           overflow: hidden;
         }
-        :after {
-          content: \@hex(@r(0x2500, 0x257f));
-          color: hsla(@r(360), 70%, 70%, @r(.9));
-          font-size: 5vmax;
+        :nth-child(even):after {
+          content: '\27d4';
+          color: hsl(
+            calc(var(--h) + @rand(60)),
+            70%, 70%
+          );
+          font-size: 2em;
+          transform: rotate(@rand(360deg)) scale(1.5);
+          transition: transform .2s ease-in-out;
+          will-change: transform;
         }
       </css-doodle>
       <div class="text-ontop">
-        <p>piduu</p>
+        <div class="text-background--faded">
+          <p>piduu</p>
+        </div>
       </div>
     </section>
   </div>
 </template>
 
+<script>
+let doodles = []
+let doodleUpdateInterval = null
+
+export default {
+  name: 'home',
+  async mounted () {
+    await this.$nextTick()
+    doodles = this.$el.querySelectorAll('css-doodle')
+    doodleUpdateInterval = setInterval(() => {
+      for (const doodle of doodles) doodle.update()
+    }, 2000)
+  },
+  beforeDestroy () {
+    clearInterval(doodleUpdateInterval)
+  }
+}
+</script>
+
 <style lang="scss">
 section {
   position: relative;
 }
+css-doodle {
+  opacity: .275;
+}
 .text-ontop {
   position: absolute;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   z-index: 1;
+}
+.text-background--faded {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
 }
 </style>
