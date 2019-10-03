@@ -27,16 +27,21 @@
       </nav>
     </div>
 
-    <router-view/>
+    <vue-loop>
+      <router-view/>
+    </vue-loop>
   </div>
 </template>
 
 <script>
+import VueLoop from 'vue-loop'
+
 let doodle = null
 let doodleUpdateInterval = null
 
 export default {
-  name: 'home',
+  name: 'app',
+  components: { VueLoop },
   async mounted () {
     await this.$nextTick()
     doodle = this.$el.querySelector('css-doodle')
