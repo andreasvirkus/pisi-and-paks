@@ -1,59 +1,17 @@
 <template>
   <div id="app" class="app-container">
-    <css-doodle>
-      :doodle {
-        @grid: 21 / 100vmax;
-        --h: @rand(360);
-        overflow: hidden;
-      }
-      :nth-child(even):after {
-        content: '\27d4';
-        color: hsl(
-          calc(var(--h) + @rand(60)),
-          70%, 70%
-        );
-        font-size: 2em;
-        transform: rotate(@rand(360deg)) scale(1.5);
-        transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-        will-change: transform;
-      }
-    </css-doodle>
-
-    <div class="headmast">
+    <div class="headmast" v-show="false">
       <nav class="headmast__nav padded">
-        <router-link to="/" class="content-link">pulmast</router-link> ∾
-        <router-link to="/feed" class="content-link">picce</router-link> ∾
-        <router-link to="/spot" class="content-link">kuhu</router-link>
+        <router-link to="/" class="content-link">pulm</router-link> ∾
+        <router-link to="/feed" class="content-link">pilt</router-link> ∾
+        <router-link to="/spot" class="content-link">koht</router-link>
       </nav>
     </div>
 
-    <vue-loop>
-      <router-view/>
-    </vue-loop>
+    <router-view/>
   </div>
 </template>
 
-<script>
-import VueLoop from 'vue-loop'
-
-let doodle = null
-let doodleUpdateInterval = null
-
-export default {
-  name: 'app',
-  components: { VueLoop },
-  async mounted () {
-    await this.$nextTick()
-    doodle = this.$el.querySelector('css-doodle')
-    doodleUpdateInterval = setInterval(() => {
-      doodle.update()
-    }, 3500)
-  },
-  beforeDestroy () {
-    clearInterval(doodleUpdateInterval)
-  }
-}
-</script>
 <style src="@/styles/variables.css"></style>
 <style src="@/styles/global.css"></style>
 <style>
@@ -61,14 +19,8 @@ export default {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
     Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-css-doodle {
-  position: fixed;
-  z-index: -1;
-  opacity: .275;
-  min-height: 100vh;
-}
 .headmast {
-  position: fixed;
+  position: sticky;
   z-index: 5;
   top: 0;
   left: 0;
@@ -77,7 +29,7 @@ css-doodle {
   font-weight: 700;
   color: var(--color-content-secondary);
   background-color: rgba(255, 255, 255, .85);
-  box-shadow: 0 10px 20px rgba(250,250,250,0.19), 0 6px 6px rgba(180,180,180,0.23);
+  box-shadow: 0 6px 6px rgba(180,180,180,0.23);
 }
 .headmast__nav {
   display: flex;
