@@ -4,6 +4,9 @@ module.exports = {
       skipWaiting: true
     }
   },
+  configureWebpack: {
+    devtool: 'none'
+  },
   chainWebpack: (config) => {
     const svgRule = config.module.rule('svg')
 

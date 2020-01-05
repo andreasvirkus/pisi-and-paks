@@ -8,10 +8,19 @@
 
     <section class="coming-soon-section">
       <h1 class="heading-font">27&bull;06&bull;2020</h1>
-      <h2 class="heading-font">Kristjan & Johanna</h2>
+      <h2 class="heading-font">Kristjan & <ampersand-icon /> Johanna</h2>
     </section>
   </div>
 </template>
+
+<script>
+import { AmpersandIcon } from '@/assets/ampersand.svg'
+
+export default {
+  name: 'app',
+  components: { AmpersandIcon }
+}
+</script>
 
 <style src="@/styles/variables.css"></style>
 <style src="@/styles/global.css"></style>
