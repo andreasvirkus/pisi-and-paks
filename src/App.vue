@@ -1,23 +1,41 @@
 <template>
   <div id="app" class="app-container">
-    <div class="headmast" v-show="false">
-      <nav class="headmast__nav padded">
-        <router-link to="/" class="content-link">pulm</router-link> ∾
-        <router-link to="/feed" class="content-link">pilt</router-link> ∾
-        <router-link to="/spot" class="content-link">koht</router-link>
-      </nav>
-    </div>
+    <!-- <nav class="headmast__nav padded">
+      <a href="/" class="content-link">pulm</a> ∾
+      <a href="/feed" class="content-link">pilt</a> ∾
+      <a href="/spot" class="content-link">koht</a>
+    </nav> -->
 
-    <router-view/>
+    <section class="coming-soon-section">
+      <h1 class="heading-font">27&bull;06&bull;2020</h1>
+      <h2 class="heading-font">Kristjan & Johanna</h2>
+    </section>
   </div>
 </template>
 
 <style src="@/styles/variables.css"></style>
 <style src="@/styles/global.css"></style>
-<style>
+<style lang="scss">
 .app-container {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
-    Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: 'anonymous-pro', monospace;
+  background-color: #eaf6fe;
+}
+.heading-font {
+  font-family: 'buena-park-jf', serif;
+}
+.coming-soon-section {
+  h1 {
+    font-size: 3.25rem;
+  }
+  h2 {
+    display: block;
+    margin-top: 2.5rem;
+    font-size: 1.875rem;
+  }
 }
 .headmast {
   position: sticky;
@@ -28,8 +46,8 @@
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--color-content-secondary);
-  background-color: rgba(255, 255, 255, .85);
-  box-shadow: 0 6px 6px rgba(180,180,180,0.23);
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 6px 6px rgba(180, 180, 180, 0.23);
 }
 .headmast__nav {
   display: flex;

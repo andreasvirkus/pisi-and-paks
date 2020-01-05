@@ -49,7 +49,7 @@
   &__blob {
     position: absolute;
     z-index: -1;
-    transform: translate(7rem, -6rem);
+    // transform: translate(7rem, -6rem);
   }
 
   &::before {
