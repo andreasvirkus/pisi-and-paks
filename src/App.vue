@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { AmpersandIcon } from '@/assets/ampersand.svg'
+import AmpersandIcon from '@/assets/ampersand.svg'
 
 export default {
   name: 'app',
