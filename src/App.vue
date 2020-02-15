@@ -119,9 +119,7 @@ textarea {
   }
 
   @media screen and (max-width: 40rem) {
-    opacity: 0.2;
-    left: 70px;
-    top: 45%;
+    display: none;
   }
 }
 // .header:hover,
@@ -142,6 +140,10 @@ main {
   }
   header p {
     margin-top: 1rem;
+  }
+
+  @media screen and (max-width: 40rem) {
+    padding-top: 10vh;
   }
 }
 
