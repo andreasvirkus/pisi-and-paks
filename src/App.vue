@@ -12,10 +12,7 @@
       </h1>
     </header>
 
-    <main
-      @mouseover="hovering = true"
-      @mouseleave="hovering = false"
-    >
+    <main>
       <p>Ootame sind oma pulmapeople.</p>
 
       <header>
@@ -120,11 +117,17 @@ textarea {
     border: 2px solid #daa520;
     background-color: #e9e7de;
   }
+
+  @media screen and (max-width: 40rem) {
+    opacity: 0.2;
+    left: 70px;
+    top: 45%;
+  }
 }
-.header:hover,
-.header--raised {
-  transform: rotate(25deg);
-}
+// .header:hover,
+// .header--raised {
+//   transform: rotate(25deg);
+// }
 main {
   padding: 20vh 2rem;
   max-width: 30rem;
