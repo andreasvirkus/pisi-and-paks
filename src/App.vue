@@ -3,7 +3,10 @@
     id="app"
     class="app-container"
   >
-    <header :class="hovering && 'header--raised'">
+    <header
+      class="header"
+      :class="hovering && 'header--raised'"
+    >
       <h1 class="heading-font">
         Kutse pulmapeople
       </h1>
@@ -15,19 +18,23 @@
     >
       <p>Ootame sind oma pulmapeople.</p>
 
-      <h2 class="heading-font">
-        27&bull;06&bull;2020
-      </h2>
-
-      <p>Kell 16:00 Padise kastellis Padisel.</p>
+      <header>
+        <h2 class="heading-font">
+          27&bull;06&bull;2020
+        </h2>
+        <p>Kell 16:00 Padise kastellis Padisel.</p>
+      </header>
 
       <p class="space-m">
-        Õhtusöök disko ja elava muusikaga, riietus pidulikult mugav.
+        Õhtusöök disko ja elava muusikaga, <br>riietus pidulikult mugav.
       </p>
 
-      <p>Oma tulekust anna teada hiljemalt <br><strong>27. aprilliks <a href="mailto:johannaeenma@gmail.com">johannaeenma@gmail.com</a></strong>, öeldes selge sõnaga <q>jah</q>.</p>
+      <p>
+        Oma tulekust anna teada hiljemalt <br><strong>27. aprilliks <a href="mailto:johannaeenma@gmail.com">johannaeenma@gmail.com</a></strong>,
+        <br>öeldes selge sõnaga <q>jah</q>.
+      </p>
 
-      <p>Oleme väga tänulikud kingi eest, mis mahub ümbrikusse.</p>
+      <p>Oleme väga tänulikud kingi eest, <br>mis mahub ümbrikusse.</p>
 
       <footer class="heading-font text-center">
         Kristjan <ampersand-icon /> Johanna
@@ -87,21 +94,22 @@ textarea {
 .heading-font {
   font-family: 'buena-park-jf', serif;
 }
-header {
-  // background-color: #eaf6fe;
+.header {
   display: inline-block;
   position: absolute;
-  top: -20%;
-  left: 0;
-  background-color: rgba(234, 246, 254, 0.7);
-  padding: 8rem 4rem;
+  top: 33%;
+  left: 100px;
   transform: rotate(90deg);
-  transform-origin: 20px 330px;
+  // top: -20%;
+  // background-color: #eaf6fe;
+  // padding: 8rem 4rem;
+  // background-color: rgba(234, 246, 254, 0.7);
+  // transform-origin: 20px 330px;
   transition: transform 0.3s ease-out;
   white-space: pre;
 
   &::after {
-    content: '';
+    // content: '';
     display: block;
     position: absolute;
     bottom: 0.75rem;
@@ -113,16 +121,23 @@ header {
     background-color: #e9e7de;
   }
 }
-header:hover,
+.header:hover,
 .header--raised {
   transform: rotate(25deg);
 }
 main {
-  padding: 20vh 5vw;
+  padding: 20vh 2rem;
   max-width: 30rem;
   width: 96%;
 
   & > * + * {
+    margin-top: 1.5rem;
+  }
+
+  header {
+    margin-top: 3rem
+  }
+  header p {
     margin-top: 1rem;
   }
 }
@@ -151,10 +166,14 @@ q:after {
 }
 footer {
   margin-top: 4rem;
+
+  svg {
+    height: 1.45rem;
+    vertical-align: middle;
+  }
 }
 
-svg {
-  height: 1.45rem;
-  vertical-align: middle;
+.space-m {
+  margin-top: 2.5rem;
 }
 </style>
