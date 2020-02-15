@@ -3,13 +3,16 @@
     id="app"
     class="app-container"
   >
-    <header>
+    <header :class="hovering && 'header--raised'">
       <h1 class="heading-font">
         Kutse pulmapeople
       </h1>
     </header>
 
-    <main>
+    <main
+      @mouseover="hovering = true"
+      @mouseleave="hovering = false"
+    >
       <p>Ootame sind oma pulmapeople.</p>
 
       <h2 class="heading-font">
@@ -18,7 +21,9 @@
 
       <p>Kell 16:00 Padise kastellis Padisel.</p>
 
-      <p>Õhtusöök disko ja elava muusikaga, riietus pidulikult mugav.</p>
+      <p class="space-m">
+        Õhtusöök disko ja elava muusikaga, riietus pidulikult mugav.
+      </p>
 
       <p>Oma tulekust anna teada hiljemalt <br><strong>27. aprilliks <a href="mailto:johannaeenma@gmail.com">johannaeenma@gmail.com</a></strong>, öeldes selge sõnaga <q>jah</q>.</p>
 
@@ -36,7 +41,12 @@ import AmpersandIcon from '@/assets/ampersand.svg'
 
 export default {
   name: 'App',
-  components: { AmpersandIcon }
+  components: { AmpersandIcon },
+  data () {
+    return {
+      hovering: false
+    }
+  }
 }
 </script>
 
@@ -52,7 +62,7 @@ html {
 }
 body {
   min-height: 100vh;
-  background: rgba(0, 0, 0, 0) url("https://www.toptal.com/designers/subtlepatterns/patterns/seamless_paper_texture.png") repeat scroll 0% 0%;
+  background: transparent url("https://www.toptal.com/designers/subtlepatterns/patterns/seamless_paper_texture.png") repeat scroll 0% 0%;
 }
 body,
 body * {
@@ -69,6 +79,7 @@ textarea {
 }
 
 .app-container {
+  position: relative;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -80,16 +91,31 @@ header {
   // background-color: #eaf6fe;
   display: inline-block;
   position: absolute;
-  top: 0;
+  top: -20%;
+  left: 0;
   background-color: rgba(234, 246, 254, 0.7);
-  padding: 6rem 4rem;
+  padding: 8rem 4rem;
   transform: rotate(90deg);
-  transform-origin: top left;
+  transform-origin: 20px 330px;
   transition: transform 0.3s ease-out;
+  white-space: pre;
 
-  &:hover {
-    transform: rotate(0);
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0.75rem;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    border: 2px solid #daa520;
+    background-color: #e9e7de;
   }
+}
+header:hover,
+.header--raised {
+  transform: rotate(25deg);
 }
 main {
   padding: 20vh 5vw;
@@ -123,8 +149,12 @@ q:before {
 q:after {
     content: close-quote;
 }
+footer {
+  margin-top: 4rem;
+}
 
 svg {
-  height: 1rem;
+  height: 1.45rem;
+  vertical-align: middle;
 }
 </style>
