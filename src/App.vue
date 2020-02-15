@@ -66,7 +66,7 @@ html {
 }
 body {
   min-height: 100vh;
-  background: transparent url("https://www.toptal.com/designers/subtlepatterns/patterns/seamless_paper_texture.png") repeat scroll 0% 0%;
+  background: #e9e7de url("https://www.toptal.com/designers/subtlepatterns/patterns/seamless_paper_texture.png") repeat scroll 0% 0%;
 }
 body,
 body * {
