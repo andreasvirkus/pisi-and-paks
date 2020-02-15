@@ -156,7 +156,7 @@ h2 {
   font-size: 2rem;
 }
 p {
-  font-size: 16px;
+  font-size: 15px;
 }
 q {
   quotes: "“" "”" "‘" "’";
