@@ -1,3 +1,3 @@
 module.exports = {
-  presets: [['@vue/cli-plugin-babel/preset', { polyfills: [] }]],
+  presets: [['@vue/cli-plugin-babel/preset', { polyfills: [] }]]
 }

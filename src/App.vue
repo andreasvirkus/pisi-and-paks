@@ -1,5 +1,8 @@
 <template>
-  <div id="app" class="app-container">
+  <div
+    id="app"
+    class="app-container"
+  >
     <!-- <nav class="headmast__nav padded">
       <a href="/" class="content-link">pulm</a> ∾
       <a href="/feed" class="content-link">pilt</a> ∾
@@ -7,8 +10,12 @@
     </nav> -->
 
     <section class="coming-soon-section">
-      <h1 class="heading-font">27&bull;06&bull;2020</h1>
-      <h2 class="heading-font">Kristjan & <ampersand-icon /> Johanna</h2>
+      <h1 class="heading-font">
+        27&bull;06&bull;2020
+      </h1>
+      <h2 class="heading-font">
+        Kristjan & <ampersand-icon /> Johanna
+      </h2>
     </section>
   </div>
 </template>
@@ -17,7 +24,7 @@
 import AmpersandIcon from '@/assets/ampersand.svg'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: { AmpersandIcon }
 }
 </script>
