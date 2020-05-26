@@ -27,7 +27,7 @@
       </p>
 
       <p>
-        Oma tulekust anna teada hiljemalt <br><strong>27. aprilliks <a href="mailto:johannaeenma@gmail.com">johannaeenma@gmail.com</a></strong>,
+        Oma tulekust anna teada hiljemalt <br><strong>5. juuniks <a href="mailto:johannaeenma@gmail.com">johannaeenma@gmail.com</a></strong>,
         <br>öeldes selge sõnaga <q>jah</q>.
       </p>
 
