@@ -1,0 +1,35 @@
+
+/* Handicraft reset */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: #e9e7de
+    url('https://www.toptal.com/designers/subtlepatterns/patterns/seamless_paper_texture.png')
+    repeat scroll 0% 0%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+body,
+button,
+input,
+textarea {
+  font-family: 'anonymous-pro', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
