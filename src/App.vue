@@ -1,21 +1,28 @@
 <template>
-  <Feed v-if="showFeed" />
-  <Invitation v-else />
+  <component :is="activeView" />
 </template>
 
 <script>
 import Feed from './components/Feed.vue'
+import Spot from './components/Spot.vue'
 import Invitation from './components/Invitation.vue'
+
+const routes = {
+  '/feed': Feed,
+  '/spot': Spot,
+  '/': Invitation,
+}
 
 export default {
   name: 'App',
   components: {
     Feed,
+    Spot,
     Invitation,
   },
   data() {
     return {
-      showFeed: location.pathname === '/feed',
+      activeView: routes[location.pathname] || routes['/'],
     }
   },
 }
