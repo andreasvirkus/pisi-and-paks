@@ -1,14 +1,12 @@
 <template>
   <article>
-    <header>
-      <nav>
-        <a href="#ajakava">Ajakava</a>
-        <a href="#asukoht">Asukoht</a>
-        <a href="#menuu">Menüü</a>
-        <a href="#transport">Transport</a>
-        <a href="#kontaktid">Kontaktid</a>
-      </nav>
-    </header>
+    <nav>
+      <a href="#ajakava">Ajakava</a>
+      <a href="#asukoht">Asukoht</a>
+      <a href="#menuu">Menüü</a>
+      <a href="#transport">Transport</a>
+      <a href="#kontaktid">Kontaktid</a>
+    </nav>
 
     <main>
       <p>
@@ -112,15 +110,19 @@
 
       <ul>
         <li>
-          Kristjan Oden (peigmees) <a href="tel:+37251980727"><strong>5198 0727</strong></a>
+          Kristjan Oden
+          <a href="tel:+37251980727"><strong>5198 0727</strong></a>
+          <br /><em>peigmees</em>
         </li>
         <li>
-          Johanna Eenma (pruut, varsti Oden)
+          Johanna Eenma
           <a href="tel:+37253340525"><strong>5334 0525</strong></a>
+          <br /><em>pruut, varsti Oden</em>
         </li>
         <li>
-          Susanna Eenma (pruudi õde, põhiorgunnija)
+          Susanna Eenma
           <a href="tel:+37253411011"><strong>5341 1011</strong></a>
+          <br /><em>pruudi õde, põhiorgunnija</em>
         </li>
       </ul>
 
@@ -145,16 +147,42 @@ article {
   justify-content: flex-end;
 }
 
-header {
+nav {
   position: sticky;
+  top: 0;
+  display: grid;
+  grid-auto-flow: row;
+  padding: 4rem;
+  position: sticky;
+  align-self: flex-start;
   top: 0;
 }
 
-nav {
-  display: flex;
-  flex-direction: column;
-  padding: 4rem;
-  position: sticky;
-  top: 0;
+main {
+  padding: 2rem;
+}
+
+@media screen and (max-width: 40rem) {
+  article {
+    flex-direction: column;
+  }
+
+  nav {
+    grid-auto-flow: column;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(2px);
+  }
+  /* nav::before {
+    content: '';
+    filter: blur(2px);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  } */
 }
 </style>
