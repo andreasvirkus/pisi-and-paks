@@ -1,4 +1,35 @@
 ---
 label: Leht
 hide_body: false
-fields: []
+fields:
+- name: intro
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Intro
+- name: itinerary
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Ajakava
+- name: map-link
+  type: text
+  config:
+    required: false
+  label: Asukoht
+  description: Lingi tekst
+- name: transport
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Transport
