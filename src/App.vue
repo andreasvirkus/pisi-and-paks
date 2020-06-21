@@ -6,11 +6,13 @@
 import Feed from './components/Feed.vue'
 import Spot from './components/Spot.vue'
 import Invitation from './components/Invitation.vue'
+import Home from './components/Home.vue'
 
 const routes = {
   '/feed': Feed,
   '/spot': Spot,
-  '/': Invitation,
+  '/invite': Invitation,
+  '/': Home,
 }
 
 export default {
