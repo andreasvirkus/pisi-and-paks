@@ -37,7 +37,9 @@ export default {
     }
   },
   async created() {
-    const { graphql } = await fetch(`https://www.instagram.com/explore/tags/${this.tag}/?__a=1`)
+    const { graphql } = await fetch(
+      `https://www.instagram.com/explore/tags/${this.tag}/?__a=1`,
+    ).then((r) => r.json)
     console.info('fetch response', graphql)
     if (!graphql) return
 
