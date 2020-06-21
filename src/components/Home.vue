@@ -12,9 +12,16 @@
       <p>
         Kallid külalised. Meil on rõõm teatada, et vaatamata maailmas toimuvale, meie väike
         pulmapidu ära ei jää. Pidu toimub! Jee! Ja kõik endise plaani kohaselt. Saab nalja, saab
-        napsu, saab muusikat ja tantsu, saab hamba alla ka. Asukoht Padise kastell (mitte segamini
-        ajada Padise kloostriga või Padise mõisaga). Kastell on kloostri taga metsas, nagu Siim.
-        Koht on väga mõnus, ümberringi park ja puud, kus on mõnus jalga ja selfikätt sirutada.
+        napsu, saab muusikat ja tantsu, saab hamba alla ka. Asukoht
+        <a
+          href="https://goo.gl/maps/uWxqGC5QD5khrb476"
+          rel="noreferrer noopener nofollow"
+          target="_blank"
+          >Padise kastell</a
+        >
+        (mitte segamini ajada Padise kloostriga või Padise mõisaga). Kastell on kloostri taga
+        metsas, nagu Siim. Koht on väga mõnus, ümberringi park ja puud, kus on mõnus jalga ja
+        selfikätt sirutada.
       </p>
 
       <h2 id="ajakava">Ajakava</h2>
@@ -22,11 +29,11 @@
         <li>14:15 Buss Balti Jaamas</li>
         <li>16:00-17:00 kogunemine hoovis ja pildistamine</li>
         <li>17:00 Sööma</li>
-        <li>18:00Meelelahutusprogramm algab</li>
+        <li>18:00 Meelelahutusprogramm algab</li>
         <li>22:00 Bänd</li>
-        <li>23:00 disko</li>
-        <li>02:30 buss</li>
-        <li>03:00 lõpp</li>
+        <li>23:00 Disko</li>
+        <li>02:30 Bussile</li>
+        <li>03:00 Lõpp</li>
       </ul>
 
       <h2 id="asukoht">Asukoht</h2>
@@ -34,7 +41,7 @@
       <a
         href="https://goo.gl/maps/uWxqGC5QD5khrb476"
         class="maps-link"
-        rel="noreferrer nofollow"
+        rel="noreferrer noopener nofollow"
         target="_blank"
       >
         Ava mäpsis
@@ -87,12 +94,12 @@
       <h3>Eelroog</h3>
 
       <ul>
-        <li>Juustuvalik puuviljade, leivaõhikute, hummuste ja prosciuttoga</li>
-        <li>Graavilõhe avokaadokreemiga lavaššikorvis</li>
+        <li>Juustuvalik puuviljade, leivaõhikute, hummuste ja <em>prosciuttoga</em></li>
+        <li>Graavilõhe avokaadokreemiga lavašikorvis</li>
         <li>Peedis marineeritud kanamaks rukkileival</li>
-        <li>Pärlkuskusi salat tomati ja basiilikuga</li>
+        <li>Pärlkuskussi salat tomati ja basiilikuga</li>
         <li>Kartuli-peekonisalat hapukurgi, sibula ja koduse majoneesiga</li>
-        <li>Valik ciabattasid kitsekreem ja viigimari brie ja murakas</li>
+        <li>Valik <em>ciabattasid</em> kitsekreem ja viigimari brie ja murakas</li>
       </ul>
 
       <h3>Pearoog</h3>
@@ -100,14 +107,15 @@
       <ul>
         <li>Röstitud pardikoib</li>
         <li>Siiafilee sidruni ja võiga</li>
-        <li>Ahjukartul rosmariini ja küüslauguga Punaveinikaste</li>
-        <li>Värske salat maasikat</li>
+        <li>Ahjukartul rosmariini ja küüslauguga</li>
+        <li>Punaveinikaste</li>
+        <li>Värske salat maasikatega</li>
       </ul>
 
       <h2 id="transport">Transport ja ööbimine</h2>
 
       Kuna ööbimisvõimalusi me pakkuda ei saa, siis peame peo lõppedes sammud sängi poole seadma.
-      Või mõnda pealinna lokaali öömütsile. Küll aga eeldavad mõlemad transpordi olemasolu. Selleks
+      Või mõnda pealinnalokaali öömütsile. Küll aga eeldavad mõlemad transpordi olemasolu. Selleks
       on mõned variandid, palun tutvuda.
 
       <h3>Autoga tulijad/minejad</h3>
@@ -118,20 +126,20 @@
       </p>
       <p>
         Tallinnast tulijad, teil on vedanud - kõigest 45 minutit mõnusat sõitu ja olete juba kohal.
-        Tartust tulijatele (täitsa kahju teist) vähemalt 2,5 tundi TRT-TLN maanteed…edu!
+        Tartust tulijatele (täitsa kahju teist) vähemalt 2,5 tundi TRT-TLN maanteed… edu!
       </p>
 
       <h3>Alternatiiv autole (buss)</h3>
       <p>
         Kõikidele teile, kellele meeldib väga, kui keegi teine roolib, pakume võimalust tulla
-        bussiga. Jee! buss võtab kõik soovijad Tallinnast Balti Jaamast kell 14.15 peale.
+        bussiga. Jee! Buss võtab kõik soovijad Tallinnast Balti Jaamast kell 14.15 peale.
       </p>
 
       <h2 id="kontaktid">Olulised numbrid</h2>
 
       <p>
         Kõige olulisem number on muidugi kuupäev, aga juhuks, kui oleme midagi unustanud teada anda
-        või kui kellegil on täiendavaid küsimusi, siis siin mõned olulised numbrid, kust infot
+        või kui kellelgi on täiendavaid küsimusi, siis siin mõned olulised numbrid, kust infot
         saada:
       </p>
 
@@ -155,7 +163,7 @@
 
       <p>
         NB! Pulmapäeval helistada jooksvate küsimuste puhul Susannale. Pruut ja peigmees ei pruugi
-        vastata, sest pulmad <em>eksole</em>.
+        vastata, sest pulmad, <em>eksole</em>.
       </p>
     </main>
   </article>
