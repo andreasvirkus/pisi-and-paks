@@ -67,20 +67,6 @@ a {
   }
 }
 
-main {
-  padding: 2rem;
-  max-width: 30rem;
-  width: 96%;
-}
-
-@media screen and (max-width: 40rem) {
-  main {
-    padding-top: 10vh;
-  }
-}
-main > * + * {
-  margin-top: 1.5rem;
-}
 header {
   margin-top: 3rem;
 }

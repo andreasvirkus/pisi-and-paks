@@ -1,6 +1,6 @@
 <template>
   <article>
-    <nav>
+    <nav v-if="showNav">
       <a href="#ajakava">Ajakava</a>
       <a href="#asukoht">Asukoht</a>
       <a href="#menuu">Menüü</a>
@@ -8,11 +8,20 @@
       <a href="#olulised-numbrid">Kontaktid</a>
     </nav>
 
-    <main>
-      <Content />
-    </main>
+    <Content :class="showNav && 'content'" />
   </article>
 </template>
+
+<script>
+export default {
+  name: 'Layout',
+  data() {
+    return {
+      showNav: location.pathname !== '/feed.html',
+    }
+  },
+}
+</script>
 
 <style>
 article {
@@ -38,6 +47,21 @@ nav {
 }
 .header-anchor {
   display: none;
+}
+
+.content {
+  padding: 2rem;
+  max-width: 30rem;
+  width: 96%;
+}
+
+@media screen and (max-width: 40rem) {
+  .content {
+    padding-top: 5vh;
+  }
+}
+.content > * + * {
+  margin-top: 1.5rem;
 }
 
 @media screen and (max-width: 40rem) {
