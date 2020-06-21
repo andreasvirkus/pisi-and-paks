@@ -45,14 +45,15 @@ function relativeTime(previous) {
 export default {
   name: 'Feed',
   data() {
-    const query = new URLSearchParams(location.search)
-    const tag = query.get('tag')
     return {
       media: [],
-      tag: tag || 'paksjapisi',
+      tag: 'paksjapisi',
     }
   },
-  async created() {
+  async mounted() {
+    const query = new URLSearchParams(location.search)
+    this.tag = query.get('tag') || 'paksjapisi'
+
     const { graphql } = await fetch(
       `https://www.instagram.com/explore/tags/${this.tag}/?__a=1`,
     ).then((r) => r.json())

@@ -17,8 +17,11 @@ export default {
   name: 'Layout',
   data() {
     return {
-      showNav: location.pathname !== '/feed.html',
+      showNav: true,
     }
+  },
+  mounted() {
+    this.showNav = window.location.pathname !== '/feed.html'
   },
 }
 </script>
