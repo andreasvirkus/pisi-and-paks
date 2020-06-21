@@ -1,7 +1,7 @@
 <template>
   <section>
     <h1>
-      <kbd>#pisipaksuks</kbd>
+      <kbd>#{{ tag }}</kbd>
     </h1>
 
     <img
@@ -31,9 +31,11 @@
 export default {
   name: 'Feed',
   data() {
+    const query = new URLSearchParams(location.search)
+    const tag = query.get('tag')
     return {
       media: [],
-      tag: location.search.tag || 'dog',
+      tag: tag || 'paksjapisi',
     }
   },
   async created() {
