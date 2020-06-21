@@ -1,11 +1,10 @@
 {
   "name": "pisi-and-paks",
   "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "vdev": "vitepress",
-    "vbuild": "vitepress build"
+    "dev": "vitepress",
+    "build": "vitepress build"
   },
   "dependencies": {
     "md.js": "^0.2.6",
@@ -13,7 +12,6 @@
   },
   "devDependencies": {
     "@vue/compiler-sfc": "3.0.0-beta.15",
-    "vite": "1.0.0-beta.2",
     "vitepress": "^0.4.0"
   },
   "prettier": {

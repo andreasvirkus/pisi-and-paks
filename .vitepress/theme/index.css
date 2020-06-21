@@ -1,0 +1,120 @@
+/* Handicraft reset */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  background: #e9e7de
+    url('https://www.toptal.com/designers/subtlepatterns/patterns/seamless_paper_texture.png')
+    repeat scroll 0% 0%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+body,
+button,
+input,
+textarea {
+  font-family: 'anonymous-pro', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+}
+
+.app-container {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.heading-font {
+  font-family: 'buena-park-jf', serif;
+}
+.header {
+  display: inline-block;
+  position: absolute;
+  top: 33%;
+  left: 100px;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-out;
+  white-space: pre;
+}
+.header::after {
+  /* content: ''; */
+  display: block;
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  border: 2px solid #daa520;
+  background-color: #e9e7de;
+}
+@media screen and (max-width: 40rem) {
+  .header {
+    display: none;
+  }
+}
+
+main {
+  padding: 2rem;
+  max-width: 30rem;
+  width: 96%;
+}
+
+@media screen and (max-width: 40rem) {
+  main {
+    padding-top: 10vh;
+  }
+}
+main > * + * {
+  margin-top: 1.5rem;
+}
+header {
+  margin-top: 3rem;
+}
+header p {
+  margin-top: 1rem;
+}
+a {
+  color: inherit;
+}
+h1 {
+  font-size: 3.6rem;
+}
+h2 {
+  font-size: 2rem;
+}
+p {
+  font-size: 15px;
+}
+q {
+  quotes: '“' '”' '‘' '’';
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+footer {
+  margin-top: 4rem;
+}
+footer svg {
+  height: 1.45rem;
+  vertical-align: middle;
+}
+.space-m {
+  margin-top: 2.5rem;
+}

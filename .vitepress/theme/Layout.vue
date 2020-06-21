@@ -4,29 +4,17 @@
       <a href="#ajakava">Ajakava</a>
       <a href="#asukoht">Asukoht</a>
       <a href="#menuu">Menüü</a>
-      <a href="#transport">Transport</a>
-      <a href="#kontaktid">Kontaktid</a>
+      <a href="#transport-ja-oobimine">Transport</a>
+      <a href="#olulised-numbrid">Kontaktid</a>
     </nav>
 
-    <main v-html="markd()"></main>
+    <main>
+      <Content />
+    </main>
   </article>
 </template>
 
-<script>
-import md from 'md.js'
-import content from '../home.md'
-
-export default {
-  name: 'Home',
-  methods: {
-    markd() {
-      return md(content)
-    },
-  },
-}
-</script>
-
-<style scoped>
+<style>
 article {
   display: flex;
   flex-direction: row-reverse;
@@ -44,13 +32,12 @@ nav {
   top: 0;
 }
 
-main {
-  padding: 2rem;
-}
-
 .maps-link {
   display: flex;
   align-items: center;
+}
+.header-anchor {
+  display: none;
 }
 
 @media screen and (max-width: 40rem) {
