@@ -8,7 +8,9 @@
       <a href="#kontaktid">Kontaktid</a>
     </nav>
 
-    <main v-html="markd()"></main>
+    <main>
+      <Content />
+    </main>
   </article>
 </template>
 
