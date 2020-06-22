@@ -1,3 +1,7 @@
+---
+title: Pulmad 🎉
+---
+
 Kallid külalised. Meil on rõõm teatada, et vaatamata maailmas toimuvale, meie väike pulmapidu ära ei jää. Pidu toimub! Jee! Ja kõik endise plaani kohaselt. Saab nalja, saab napsu, saab muusikat ja tantsu, saab hamba alla ka. Asukoht [Padise kastell](https://goo.gl/maps/uWxqGC5QD5khrb476) (mitte segamini ajada Padise kloostriga või Padise mõisaga). Kastell on kloostri taga metsas, nagu Siim. Koht on väga mõnus, ümberringi park ja puud, kus on mõnus jalga ja selfikätt sirutada.
 
 ## Ajakava

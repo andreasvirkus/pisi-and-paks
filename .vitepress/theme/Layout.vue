@@ -22,7 +22,6 @@ export default {
   },
   mounted() {
     this.showNav = window.location.pathname !== '/feed.html'
-    document.title = 'Oden | Pulmad'
   },
 }
 </script>

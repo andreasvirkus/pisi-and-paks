@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Oden | Pulmad',
+  title: 'Oden',
   description: 'Johanna & Kristjani pulmapidu 🎉',
   head: [
     ['meta', { charset: 'utf-8' }],
