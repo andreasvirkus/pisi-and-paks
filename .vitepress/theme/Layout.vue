@@ -17,7 +17,7 @@ export default {
   name: 'Layout',
   data() {
     return {
-      showNav: true,
+      showNav: false,
     }
   },
   mounted() {
