@@ -59,13 +59,12 @@ nav {
 
 .content {
   padding: 2rem;
-  max-width: 30rem;
-  width: 96%;
+  max-width: 35rem;
 }
 
 @media screen and (max-width: 40rem) {
   .content {
-    padding-top: 5vh;
+    padding: 5vw 0.75rem;
   }
 }
 .content > * + * {
