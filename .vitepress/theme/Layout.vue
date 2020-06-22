@@ -8,7 +8,7 @@
       <a href="#olulised-numbrid">Kontaktid</a>
     </nav>
 
-    <Content :class="showNav && 'content'" />
+    <Content :class="['wrapper', showNav ? 'content' : 'feed']" />
   </article>
 </template>
 
@@ -22,6 +22,7 @@ export default {
   },
   mounted() {
     this.showNav = window.location.pathname !== '/feed.html'
+    document.title = 'Oden | Pulmad'
   },
 }
 </script>
@@ -50,6 +51,10 @@ nav {
 }
 .header-anchor {
   display: none;
+}
+
+.wrapper {
+  width: 100%;
 }
 
 .content {
