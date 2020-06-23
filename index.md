@@ -1,22 +1,24 @@
 ---
-title: "Pulmad \U0001F389"
-
+title: 'Pulmad 🎉'
 ---
+
 Kallid külalised. Meil on rõõm teatada, et vaatamata maailmas toimuvale, meie väike pulmapidu ära ei jää. Pidu toimub! Jee! Ja kõik endise plaani kohaselt. Saab nalja, saab napsu, saab muusikat ja tantsu, saab hamba alla ka. Asukoht [Padise kastell](https://goo.gl/maps/uWxqGC5QD5khrb476) (mitte segamini ajada Padise kloostriga või Padise mõisaga). Kastell on kloostri taga metsas, nagu Siim. Koht on väga mõnus, ümberringi park ja puud, kus on mõnus jalga ja selfikätt sirutada.
 
 ## Ajakava
 
-* 14:15 Buss Balti Jaamas
-* 16:00-17:00 kogunemine hoovis ja pildistamine
-* 17:00 Sööma
-* 18:00 Meelelahutusprogramm algab
-* 22:00 Bänd
-* 23:00 Disko
-* 02:30 Bussile
-* 03:00 Lõpp  
-    
-  PS. Värske paar võtab mõõtu teineteise tundmises. Mõtelge selleks välja 1 küsimus mida nende käest küsida. Ala ''Kumb sööb rohkem?''  
-  Lisaks toimub ka oksjon. Arveldamine käib sularaha, väärisesemete ja kinnisvara vastu .
+- 14:15 Buss Balti Jaamas
+- 16:00-17:00 kogunemine hoovis ja pildistamine
+- 17:00 Sööma
+- 18:00 Meelelahutusprogramm algab
+- 22:00 Bänd
+- 23:00 Disko
+- 02:30 Bussile
+- 03:00 Lõpp
+
+**PS** Värske paar võtab mõõtu teineteise tundmises. Mõtelge selleks välja 1 küsimus mida nende käest küsida, a`la\
+"Kumb sööb rohkem?"
+
+Lisaks toimub ka oksjon. Arveldamine käib sularaha, väärisesemete ja kinnisvara vastu.
 
 ## Asukoht
 
@@ -44,28 +46,28 @@ d="M375 136a133 133 0 00-79-66 136 136 0 00-40-6 133 133 0 00-103 48 133 133 0 0
 </svg>
 </a>
 
-<details><summary>Näita kaarti</summary><iframe src="[https://www.google.com/maps/embed?pb=](https://www.google.com/maps/embed?pb= "https://www.google.com/maps/embed?pb=")!1m18!1m12!1m3!1d2041.3872815010316!2d24.140916351874186!3d59.22625648153273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692afa5dd518f5b%3A0x5ea0ae70441b6134!2sPadise%20Kastell!5e0!3m2!1sen!2see!4v1592911350526!5m2!1sen!2see" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></details>
+<details><summary>Näita kaarti</summary><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2041.3872815010316!2d24.140916351874186!3d59.22625648153273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692afa5dd518f5b%3A0x5ea0ae70441b6134!2sPadise%20Kastell!5e0!3m2!1sen!2see!4v1592911350526!5m2!1sen!2see" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></details>
 
 ## Menüü
 
-Rikkalik buffet peaks kõikide toitumisvajadused rahuldama. Laual on viin, vein ja mull, muud kraami saab osta baarist. 
+Rikkalik buffet peaks kõikide toitumisvajadused rahuldama. Laual on viin, vein ja mull, muud kraami saab osta baarist.
 
 ### Eelroog
 
-* Juustuvalik puuviljade, leivaõhikute, hummuste ja _prosciuttoga_
-* Graavilõhe avokaadokreemiga lavašikorvis
-* Peedis marineeritud kanamaks rukkileival
-* Pärlkuskussi salat tomati ja basiilikuga
-* Kartuli-peekonisalat hapukurgi, sibula ja koduse majoneesiga
-* Valik _ciabattasid_ kitsekreem ja viigimari brie ja murakas
+- Juustuvalik puuviljade, leivaõhikute, hummuste ja _prosciuttoga_
+- Graavilõhe avokaadokreemiga lavašikorvis
+- Peedis marineeritud kanamaks rukkileival
+- Pärlkuskussi salat tomati ja basiilikuga
+- Kartuli-peekonisalat hapukurgi, sibula ja koduse majoneesiga
+- Valik _ciabattasid_ kitsekreem ja viigimari brie ja murakas
 
 ### Pearoog
 
-* Röstitud pardikoib
-* Siiafilee sidruni ja võiga
-* Ahjukartul rosmariini ja küüslauguga
-* Punaveinikaste
-* Värske salat maasikatega
+- Röstitud pardikoib
+- Siiafilee sidruni ja võiga
+- Ahjukartul rosmariini ja küüslauguga
+- Punaveinikaste
+- Värske salat maasikatega
 
 ## Transport ja ööbimine
 
@@ -85,11 +87,11 @@ Kõikidele teile, kellele meeldib väga, kui keegi teine roolib, pakume võimalu
 
 Kõige olulisem number on muidugi kuupäev, aga juhuks, kui oleme midagi unustanud teada anda või kui kellelgi on täiendavaid küsimusi, siis siin mõned olulised numbrid, kust infot saada:
 
-* Kristjan Oden [**5198 0727**](tel:+37251980727)  
+- Kristjan Oden [**5198 0727**](tel:+37251980727)
   _peigmees_
-* Johanna Eenma [**5334 0525**](tel:+37253340525)  
+- Johanna Eenma [**5334 0525**](tel:+37253340525)
   _pruut, varsti Oden_
-* Susanna Eenma [**5341 1011**](tel:+37253411011)  
+- Susanna Eenma [**5341 1011**](tel:+37253411011)
   _pruudi õde, põhiorgunnija_
 
 NB! Pulmapäeval helistada jooksvate küsimuste puhul Susannale. Pruut ja peigmees ei pruugi vastata, sest pulmad, _eksole_.
@@ -100,7 +102,4 @@ Kristjan
 <path
 d="M14.04 6.6c-.88.82-3.31 1.28-3.52 1.67-.61 1.13-3.49 4.83-6.97 4.83C.98 13.1.26 11.99.57 9.52.8 7.71 3.35 5.47 4.85 4.48 5.48 2.61 5.89 1.93 7.75 1c.56-.27 1.69-.35 2.3-.35.58 0 .78.53.72 1.07-.04.27-.29 1.05-.66 1.05-.54 0-.33-.86-.56-1.23-.23-.35-.93-.31-1.5-.19-1.05.23-1.72 1.5-1.83 2.24l.43-.08c.27-.02.54-.21.81-.21.66 0 .6.54.53 1.03-.04.4-.12.64-.47.91-.35.29-1.26.66-1.69.66-.23 0-.72-.27-.82-.47-.06-.06-.1-.52-.17-.49-.76.5-3.06 2.54-3.29 4.27-.06.45-.06.86-.02 1.23-.04.37.02.72.29 1.01.37.64 1.05 1.03 2.24 1.03.37 0 1.07-.1 1.42-.19 1.65-.47 2.7-1.81 3.7-3.21.12-.17.27-.58.29-.8.02-.14-.32-.12-.37-.12-.25 0-3.99-.14-4.16 1.23-.05.34.11.58.48.58l.04-.02c.1-.43.08-.66.37-.66.12 0 .33.12.29.39-.06.45-.49.84-.93.84-.6 0-1.19-.16-1.09-.93.12-.84 1.6-1.52 2.28-1.71.67-.21 2.15-.38 2.83-.38.17 0 .37 0 .58-.02.27-.12.25-.51.7-.51.54 0 .37 0 .33.43C12.1 7.15 13 6.99 13.86 6c.45-.49.49-.86.19-1.11-.21-.16-.6.35-.84.35-.17 0-.29.04-.27-.14.08-.54 1.28-.93 1.75-.93.51 0 .72.1.64.64-.07.63-.82 1.35-1.29 1.79zM7.15 3.84c-.33 0-1.09.53-1.13.88-.02.17.04.42.26.42.29 0 1.09-.6 1.13-.92.01-.2-.05-.38-.26-.38z"
 fill="#1d1d1b"
-/></svg
-
-> Johanna
-> </footer>
+/></svg> Johanna</footer>
