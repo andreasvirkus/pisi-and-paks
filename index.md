@@ -13,7 +13,10 @@ Kallid külalised. Meil on rõõm teatada, et vaatamata maailmas toimuvale, meie
 * 22:00 Bänd
 * 23:00 Disko
 * 02:30 Bussile
-* 03:00 Lõpp
+* 03:00 Lõpp  
+    
+  PS. Värske paar võtab mõõtu teineteise tundmises. Mõtelge selleks välja 1 küsimus mida nende käest küsida. Ala ''Kumb sööb rohkem?''  
+  Lisaks toimub ka oksjon. Arveldamine käib sularaha, väärisesemete ja kinnisvara vastu .
 
 ## Asukoht
 
@@ -45,7 +48,7 @@ d="M375 136a133 133 0 00-79-66 136 136 0 00-40-6 133 133 0 00-103 48 133 133 0 0
 
 ## Menüü
 
-Rikkalik buffet peaks kõikide toitumisvajadused rahuldama, kuid kui keegi tunneb, et tema maitsemeeltele sobilik menüüst puudub, siis anda sellest meile vaikselt märku.
+Rikkalik buffet peaks kõikide toitumisvajadused rahuldama. Laual on viin, vein ja mull, muud kraami saab osta baarist. 
 
 ### Eelroog
 
