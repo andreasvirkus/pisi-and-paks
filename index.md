@@ -1,7 +1,7 @@
 ---
 title: "Pulmad \U0001F389"
-
 ---
+
 Kallid külalised. Meil on rõõm teatada, et vaatamata maailmas toimuvale, meie väike pulmapidu ära ei jää. Pidu toimub! Jee! Ja kõik endise plaani kohaselt. Saab nalja, saab napsu, saab muusikat ja tantsu, saab hamba alla ka. Asukoht [Padise kastell](https://goo.gl/maps/SQnWBbpXqnksiwzr8) (mitte segamini ajada Padise kloostriga või Padise mõisaga). Kastell on kloostri taga metsas, nagu Siim. Koht on väga mõnus, ümberringi park ja puud, kus on mõnus jalga ja selfikätt sirutada.
 
 ## Ajakava
@@ -9,7 +9,7 @@ Kallid külalised. Meil on rõõm teatada, et vaatamata maailmas toimuvale, meie
 - 14:15 Buss Balti Jaamas
 - 16:00-17:00 kogunemine hoovis ja pildistamine
 - 17:00 Sööma
-- 18:00 Meelelahutusprogramm algab
+- 18:00 Algab meelelahutusprogramm
 - 22:00 Bänd
 - 23:00 Disko
 - 02:30 Bussile
@@ -59,7 +59,7 @@ Rikkalik buffet peaks kõikide toitumisvajadused rahuldama. Laual on viin, vein 
 - Peedis marineeritud kanamaks rukkileival
 - Pärlkuskussi salat tomati ja basiilikuga
 - Kartuli-peekonisalat hapukurgi, sibula ja koduse majoneesiga
-- Valik _ciabattasid_ kitsekreem ja viigimari brie ja murakas
+- Valik _ciabattasid_ kitsekreemi vahuga, viigimarjade, Brie ja murakatega
 
 ### Pearoog
 
