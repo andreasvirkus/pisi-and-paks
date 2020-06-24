@@ -1,35 +1,17 @@
 <template>
-  <section>
-    <h1>
-      <kbd>#{{ tag }}</kbd>
-    </h1>
-
-    <pre align="left">slider node[{{ sliderIndex }}] {{ slide }}</pre>
-
-    <transition name="slider">
-      <div class="slider" :key="sliderIndex">
-        <video-player
-          v-if="slide.is_video"
-          :key="sliderIndex"
-          :poster="slide.display_url"
-          :shortcode="slide.shortcode"
-        />
-        <img
-          v-else
-          :key="sliderIndex"
-          :src="slide.thumbnail_src"
-          :alt="slide.accessibility_caption"
-        />
-        <div>
-          <time :datetime="new Date(slide.taken_at_timestamp)">
-            {{ relativeTime(slide.taken_at_timestamp) }}
-          </time>
-          <!-- | 🖤 {{ slide.edge_liked_by.count }} -->
-        </div>
-      </div>
+  <div class="slider">
+    <transition name="slide" mode="out-in" appear>
+      <video-player
+        v-if="slide.is_video"
+        :key="sliderIndex"
+        :poster="slide.display_url"
+        :shortcode="slide.shortcode"
+        @end="showNext"
+      />
+      <img v-else :key="sliderIndex" :src="slide.display_url" :alt="slide.accessibility_caption" />
     </transition>
 
-    <ul>
+    <ul v-if="false && media.length">
       <li v-for="({ node }, i) in media" :key="i">
         <a :href="`https://instagram.com/p/${node.shortcode}`" rel="noopener noreferrer nofollow">
           <video-player
@@ -47,11 +29,11 @@
         </a>
       </li>
     </ul>
-  </section>
+  </div>
 </template>
 
 <script>
-import VideoPlayer from './.vitepress/theme/components/VideoPlayer.vue'
+import VideoPlayer from './VideoPlayer.vue'
 
 function relativeTime(previous) {
   if (!previous) return ''
@@ -76,83 +58,106 @@ function relativeTime(previous) {
 let carouselTimeout
 
 export default {
-  name: 'Feed',
+  name: 'ImageFeed',
   components: { VideoPlayer },
   data() {
     return {
       media: [],
       sliderIndex: 0,
       tag: 'paksjapisi',
+      debug: false,
     }
   },
   computed: {
     slide() {
-      return this.media[this.sliderIndex] || {}
+      return (this.media[this.sliderIndex] || {}).node || {}
     },
   },
   async mounted() {
-    const query = new URLSearchParams(location.search)
-    this.tag = query.get('tag') || 'paksjapisi'
-
-    const { graphql } = await fetch(
-      `https://www.instagram.com/explore/tags/${this.tag}/?__a=1`,
-    ).then((r) => r.json())
-    console.info('fetch response', graphql)
-    if (!graphql) return
-
-    this.media = graphql.hashtag.edge_hashtag_to_media.edges
-    console.info('Fetched hashtag media', this.media)
+    await this.refreshFeed()
     this.scheduleNextSlide()
   },
   methods: {
-    showNext() {
+    async refreshFeed() {
+      const query = new URLSearchParams(location.search)
+      this.tag = query.get('tag') || 'paksjapisi'
+
+      const { graphql } = await fetch(
+        `https://www.instagram.com/explore/tags/${this.tag}/?__a=1`,
+      ).then((r) => r.json())
+      if (!graphql) return []
+
+      // TODO: Fetch all pages
+      this.media = graphql.hashtag.edge_hashtag_to_media.edges
+      console.info('Fetched hashtag media', this.media)
+    },
+    async showNext() {
+      if (this.media.length - this.sliderIndex < 4) this.refreshFeed()
+
       if (this.sliderIndex + 1 >= this.media.length) this.sliderIndex = 0
       else this.sliderIndex++
 
-      this.scheduleNextSlide()
+      await this.$nextTick()
+      if (!this.slide.is_video) this.scheduleNextSlide()
     },
     scheduleNextSlide() {
       clearTimeout(carouselTimeout)
-      carouselTimeout = setTimeout(() => this.showNext(), 3000)
+      carouselTimeout = setTimeout(() => this.showNext(), 4000)
     },
     relativeTime,
   },
 }
 </script>
 
-<style scoped>
-section {
-  padding: 2rem;
+<style>
+.slider {
+  width: 100%;
   text-align: center;
 }
-.about__couple-pic {
-  max-height: 12rem;
-}
-ul {
+.slider ul {
   display: grid;
   grid-template-columns: repeat(3, minmax(100px, 293px));
   justify-content: center;
   grid-gap: 28px;
   list-style: none;
-  margin: 0;
+  margin: 3rem 0;
   padding: 0;
 }
-img,
-video {
-  width: auto;
-  max-width: 100%;
+.slider img,
+.slider video {
+  width: 100%;
+  height: 98%;
+  object-fit: contain;
+  border-radius: 6px;
 }
-a {
+.slider a {
   display: block;
   text-decoration: none;
   background-color: white;
   border: 4px solid transparent;
   border-bottom: 12px solid transparent;
 }
-a:hover {
+.slider a:hover {
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
     0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
     0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
   border-color: white;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition-duration: 0.5s;
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.slide-enter {
+  opacity: 0;
+  transform: translateX(2em);
+}
+
+.slide-leave-to {
+  opacity: 0;
+  transform: translateX(-2em);
 }
 </style>
