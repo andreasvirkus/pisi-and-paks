@@ -6,9 +6,7 @@
   <ul>
     <li v-for="({ node }, i) in media" :key="i">
       <a :href="`https://instagram.com/p/${node.shortcode}`" rel="noopener noreferrer nofollow">
-        <video v-if="node.is_video" autoplay loop>
-          <source :src="node.display_url" />
-        </video>
+        <video-player v-if="node.is_video" :poster="node.display_url" :shortcode="node.shortcode" />
         <img v-else :src="node.thumbnail_src" :alt="node.accessibility_caption">
         <div>
           <time :datetime="new Date(node.taken_at_timestamp)">
@@ -24,6 +22,8 @@
 </section>
 
 <script>
+import VideoPlayer from './.vitepress/theme/components/VideoPlayer.vue'
+
 function relativeTime(previous) {
   const current = new Date()
   previous = new Date(previous * 1000)
@@ -42,11 +42,15 @@ function relativeTime(previous) {
   return Math.round(elapsed / msPerYear) + ' years ago'
 }
 
+let carouselTimeout
+
 export default {
   name: 'Feed',
+  components: { VideoPlayer },
   data() {
     return {
       media: [],
+      displayIndex: 0,
       tag: 'paksjapisi',
     }
   },
@@ -64,6 +68,18 @@ export default {
     console.info('Fetched hashtag media', this.media)
   },
   methods: {
+    async getVideoUrl(code) {
+      const { graphql } = await fetch(`https://www.instagram.com/p/${code}/?__a=1`)
+        .then((r) => r.json())
+
+      console.info('video object', graphql)
+      return graphql.shortcode_media.video_url
+    },
+    showNext() {
+      this.displayIndex++
+      clearTimeout(carouselTimeout)
+      carouselTimeout = setTimeout(() => this.showNext(), 3000)
+    },
     relativeTime,
   },
 }
@@ -86,7 +102,8 @@ ul {
   margin: 0;
   padding: 0;
 }
-img {
+img,
+video {
   width: auto;
   max-width: 100%;
 }
