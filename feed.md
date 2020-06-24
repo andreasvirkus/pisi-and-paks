@@ -3,7 +3,14 @@
     <kbd>#{{ tag }}</kbd>
   </h1>
 
-  <ul>
+  <pre align="left" v-if="debug">slider node[{{ sliderIndex }}] {{ slide }}</pre>
+
+  <transition name="slide" mode="out-in" appear>
+    <video-player v-if="slide.is_video" :key="sliderIndex" :poster="slide.display_url" :shortcode="slide.shortcode" @end="showNext" />
+    <img v-else :key="sliderIndex" :src="slide.thumbnail_src" :alt="slide.accessibility_caption">
+  </transition>
+
+  <ul v-if="false && media.length">
     <li v-for="({ node }, i) in media" :key="i">
       <a :href="`https://instagram.com/p/${node.shortcode}`" rel="noopener noreferrer nofollow">
         <video-player v-if="node.is_video" :poster="node.display_url" :shortcode="node.shortcode" />
@@ -16,17 +23,17 @@
         </div>
       </a>
     </li>
-
   </ul>
-
 </section>
 
 <script>
 import VideoPlayer from './.vitepress/theme/components/VideoPlayer.vue'
 
 function relativeTime(previous) {
+  if (!previous) return ''
   const current = new Date()
   previous = new Date(previous * 1000)
+
   const msPerMinute = 60 * 1000
   const msPerHour = msPerMinute * 60
   const msPerDay = msPerHour * 24
@@ -50,35 +57,46 @@ export default {
   data() {
     return {
       media: [],
-      displayIndex: 0,
+      sliderIndex: 0,
       tag: 'paksjapisi',
+      debug: false,
+    }
+  },
+  computed: {
+    slide() {
+      return (this.media[this.sliderIndex] || {}).node || {}
     }
   },
   async mounted() {
-    const query = new URLSearchParams(location.search)
-    this.tag = query.get('tag') || 'paksjapisi'
-
-    const { graphql } = await fetch(
-      `https://www.instagram.com/explore/tags/${this.tag}/?__a=1`,
-    ).then((r) => r.json())
-    console.info('fetch response', graphql)
-    if (!graphql) return
-
-    this.media = graphql.hashtag.edge_hashtag_to_media.edges
-    console.info('Fetched hashtag media', this.media)
+    await this.refreshFeed()
+    this.scheduleNextSlide()
   },
   methods: {
-    async getVideoUrl(code) {
-      const { graphql } = await fetch(`https://www.instagram.com/p/${code}/?__a=1`)
-        .then((r) => r.json())
+    async refreshFeed() {
+      const query = new URLSearchParams(location.search)
+      this.tag = query.get('tag') || 'paksjapisi'
 
-      console.info('video object', graphql)
-      return graphql.shortcode_media.video_url
+      const { graphql } = await fetch(
+        `https://www.instagram.com/explore/tags/${this.tag}/?__a=1`,
+      ).then((r) => r.json())
+      if (!graphql) return []
+
+      // TODO: Fetch all pages
+      this.media = graphql.hashtag.edge_hashtag_to_media.edges
+      console.info('Fetched hashtag media', this.media)
     },
-    showNext() {
-      this.displayIndex++
+    async showNext() {
+      if (this.media.length - this.sliderIndex < 4) this.refreshFeed()
+
+      if (this.sliderIndex + 1 >= this.media.length) this.sliderIndex = 0
+      else this.sliderIndex++
+
+      await this.$nextTick()
+      if (!this.slide.is_video) this.scheduleNextSlide()
+    },
+    scheduleNextSlide() {
       clearTimeout(carouselTimeout)
-      carouselTimeout = setTimeout(() => this.showNext(), 3000)
+      carouselTimeout = setTimeout(() => this.showNext(), 4000)
     },
     relativeTime,
   },
@@ -89,6 +107,9 @@ export default {
 section {
   padding: 2rem;
   text-align: center;
+  height: 100vh;
+  background: #111;
+  color: white;
 }
 .about__couple-pic {
   max-height: 12rem;
@@ -99,13 +120,14 @@ ul {
   justify-content: center;
   grid-gap: 28px;
   list-style: none;
-  margin: 0;
+  margin: 3rem 0;
   padding: 0;
 }
 img,
 video {
   width: auto;
   max-width: 100%;
+  border-radius: 6px;
 }
 a {
   display: block;
@@ -119,5 +141,22 @@ a:hover {
     0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
     0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
   border-color: white;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition-duration: 0.5s;
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.slide-enter {
+  opacity: 0;
+  transform: translateX(2em);
+}
+
+.slide-leave-to {
+  opacity: 0;
+  transform: translateX(-2em);
 }
 </style>
