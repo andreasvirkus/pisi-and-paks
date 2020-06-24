@@ -1,3 +1,7 @@
+---
+title: 'Pildud 📸'
+---
+
 <div class="feed">
   <h1>#paksjapisi</h1>
 
