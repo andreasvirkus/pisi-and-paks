@@ -59,7 +59,7 @@ Rikkalik buffet peaks kõikide toitumisvajadused rahuldama. Laual on viin, vein 
 - Peedis marineeritud kanamaks rukkileival
 - Pärlkuskussi salat tomati ja basiilikuga
 - Kartuli-peekonisalat hapukurgi, sibula ja koduse majoneesiga
-- Valik _ciabattasid_ kitsekreemi vahuga, viigimarjade, Brie ja murakatega
+- Valik _ciabattasid_ - kitsekreem ja viigimari/Brie juust ja murakas
 
 ### Pearoog
 
