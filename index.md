@@ -1,21 +1,21 @@
 ---
 title: "Pulmad \U0001F389"
----
 
+---
 Kallid külalised. Meil on rõõm teatada, et vaatamata maailmas toimuvale, meie väike pulmapidu ära ei jää. Pidu toimub! Jee! Ja kõik endise plaani kohaselt. Saab nalja, saab napsu, saab muusikat ja tantsu, saab hamba alla ka. Asukoht [Padise kastell](https://goo.gl/maps/SQnWBbpXqnksiwzr8) (mitte segamini ajada Padise kloostriga või Padise mõisaga). Kastell on kloostri taga metsas, nagu Siim. Koht on väga mõnus, ümberringi park ja puud, kus on mõnus jalga ja selfikätt sirutada.
 
 ## Ajakava
 
-- 14:15 Buss Balti Jaamas
-- 16:00-17:00 kogunemine hoovis ja pildistamine
-- 17:00 Sööma
-- 18:00 Algab meelelahutusprogramm
-- 22:00 Bänd
-- 23:00 Disko
-- 02:30 Bussile
-- 03:00 Lõpp
+* 14:15 Buss Balti Jaamas
+* 16:00-17:00 kogunemine hoovis ja pildistamine
+* 17:00 Sööma
+* 18:00 Algab meelelahutusprogramm
+* 22:00 Bänd
+* 23:00 Disko
+* 02:30 Bussile
+* 03:00 Lõpp
 
-**PS** Värske paar võtab mõõtu teineteise tundmises. Mõtelge selleks välja 1 küsimus mida nende käest küsida, a`la\
+**PS** Värske paar võtab mõõtu teineteise tundmises. Mõtelge selleks välja 1 küsimus mida nende käest küsida, a\`la  
 "Kumb sööb rohkem?"
 
 Lisaks toimub ka oksjon. Arveldamine käib sularaha, väärisesemete ja kinnisvara vastu.
@@ -54,24 +54,24 @@ Rikkalik buffet peaks kõikide toitumisvajadused rahuldama. Laual on viin, vein 
 
 ### Eelroog
 
-- Juustuvalik puuviljade, leivaõhikute, hummuste ja _prosciuttoga_
-- Graavilõhe avokaadokreemiga lavašikorvis
-- Peedis marineeritud kanamaks rukkileival
-- Pärlkuskussi salat tomati ja basiilikuga
-- Kartuli-peekonisalat hapukurgi, sibula ja koduse majoneesiga
-- Valik _ciabattasid_ - kitsekreem ja viigimari/Brie juust ja murakas
+* Juustuvalik puuviljade, leivaõhikute, hummuste ja _prosciuttoga_
+* Graavilõhe avokaadokreemiga lavašikorvis
+* Peedis marineeritud kanamaks rukkileival
+* Pärlkuskussi salat tomati ja basiilikuga
+* Kartuli-peekonisalat hapukurgi, sibula ja koduse majoneesiga
+* Valik _ciabattasid_ - kitsekreem ja viigimari/Brie juust ja murakas
 
 ### Pearoog
 
-- Röstitud pardikoib
-- Siiafilee sidruni ja võiga
-- Ahjukartul rosmariini ja küüslauguga
-- Punaveinikaste
-- Värske salat maasikatega
+* Röstitud pardikoib
+* Siiafilee sidruni ja võiga
+* Ahjukartul rosmariini ja küüslauguga
+* Punaveinikaste
+* Värske salat maasikatega
 
-## Transport ja ööbimine
+## Transport
 
-Kuna ööbimisvõimalusi me pakkuda ei saa, siis peame peo lõppedes sammud sängi poole seadma. Või mõnda pealinnalokaali öömütsile. Küll aga eeldavad mõlemad transpordi olemasolu. Selleks on mõned variandid, palun tutvuda.
+Peo lõppedes peame sammud sängi poole seadma. Või mõnda lokaali öömütsile. Küll aga eeldavad mõlemad transpordi olemasolu. Selleks on mõned variandid, palun tutvuda.
 
 ### Autoga tulijad/minejad
 
@@ -81,17 +81,17 @@ Tallinnast tulijad, teil on vedanud - kõigest 45 minutit mõnusat sõitu ja ole
 
 ### Alternatiiv autole (buss)
 
-Kõikidele teile, kellele meeldib väga, kui keegi teine roolib, pakume võimalust tulla bussiga. Jee! Buss võtab kõik soovijad Tallinnast Balti Jaamast kell 14.15 peale.
+Kõikidele teile, kellele meeldib väga, kui keegi teine roolib, pakume võimalust tulla bussiga. Jee! Buss võtab kõik soovijad Tallinnast Balti Jaamast kell 14.15 peale ja toimetab öösel tagasi samasse kohta. 
 
 ## Olulised numbrid
 
 Kõige olulisem number on muidugi kuupäev, aga juhuks, kui oleme midagi unustanud teada anda või kui kellelgi on täiendavaid küsimusi, siis siin mõned olulised numbrid, kust infot saada:
 
-- Kristjan Oden [**5198 0727**](tel:+37251980727)
+* Kristjan Oden [**5198 0727**](tel:+37251980727)
   _peigmees_
-- Johanna Eenma [**5334 0525**](tel:+37253340525)
+* Johanna Eenma [**5334 0525**](tel:+37253340525)
   _pruut, varsti Oden_
-- Susanna Eenma [**5341 1011**](tel:+37253411011)
+* Susanna Eenma [**5341 1011**](tel:+37253411011)
   _pruudi õde, põhiorgunnija_
 
 NB! Pulmapäeval helistada jooksvate küsimuste puhul Susannale. Pruut ja peigmees ei pruugi vastata, sest pulmad, _eksole_.
