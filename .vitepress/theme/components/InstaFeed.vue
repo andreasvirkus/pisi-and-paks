@@ -78,21 +78,32 @@ export default {
     this.scheduleNextSlide()
   },
   methods: {
+    async getFeedPage(p = 0) {
+      const { graphql } = await fetch(
+        `https://www.instagram.com/explore/tags/${this.tag}/?__a=1&p=${p}`,
+      ).then((r) => r.json())
+      if (!graphql) return []
+
+      const feed = graphql.hashtag.edge_hashtag_to_media
+      const pages = feed.edges
+      if (feed.page_info.has_next_page) {
+        const nextPages = await this.getFeedPage(p + 1)
+
+        return [...pages, ...nextPages]
+      }
+
+      return pages
+    },
     async refreshFeed() {
       const query = new URLSearchParams(location.search)
       this.tag = query.get('tag') || 'paksjapisi'
 
-      const { graphql } = await fetch(
-        `https://www.instagram.com/explore/tags/${this.tag}/?__a=1`,
-      ).then((r) => r.json())
-      if (!graphql) return []
-
-      // TODO: Fetch all pages
-      this.media = graphql.hashtag.edge_hashtag_to_media.edges
+      const pages = await this.getFeedPage()
+      this.media = pages
       console.info('Fetched hashtag media', this.media)
     },
     async showNext() {
-      if (this.media.length - this.sliderIndex < 4) this.refreshFeed()
+      if (this.media.length - this.sliderIndex <= 3) this.refreshFeed()
 
       if (this.sliderIndex + 1 >= this.media.length) this.sliderIndex = 0
       else this.sliderIndex++
@@ -129,6 +140,9 @@ export default {
   height: 98%;
   object-fit: contain;
   border-radius: 6px;
+}
+.slider img[src=''] {
+  display: none;
 }
 .slider a {
   display: block;
