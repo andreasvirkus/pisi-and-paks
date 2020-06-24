@@ -8,7 +8,9 @@
       <a href="#olulised-numbrid">Kontaktid</a>
     </nav>
 
-    <Content :class="['wrapper', showNav ? 'content' : 'feed']" />
+    <main :class="['wrapper', showNav ? 'content' : 'feed']">
+      <Content />
+    </main>
   </article>
 </template>
 
@@ -21,7 +23,7 @@ export default {
     }
   },
   mounted() {
-    this.showNav = window.location.pathname !== '/feed.html'
+    this.showNav = !window.location.pathname.startsWith('/feed')
   },
 }
 </script>

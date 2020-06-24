@@ -1,6 +1,8 @@
-<h1>#paksjapisi</h1>
+<div class="feed">
+  <h1>#paksjapisi</h1>
 
-<image-feed />
+  <image-feed />
+</div>
 
 <script>
 import ImageFeed from './.vitepress/theme/components/InstaFeed.vue'

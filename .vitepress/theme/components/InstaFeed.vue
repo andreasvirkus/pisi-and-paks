@@ -137,7 +137,7 @@ export default {
 .slider img,
 .slider video {
   width: 100%;
-  height: 98%;
+  height: 94%;
   object-fit: contain;
   border-radius: 6px;
 }
