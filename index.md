@@ -8,15 +8,15 @@ Kallid külalised. Meil on rõõm teatada, et vaatamata maailmas toimuvale, meie
 
 * 14:15 Buss Balti Jaamas
 * 16:00-17:00 kogunemine hoovis ja pildistamine
-* 17:00 Sööma
+* 17:15 Sööma
 * 18:00 Algab meelelahutusprogramm
+* 21:30 Kook'n'konjaabel
 * 22:00 Bänd
 * 23:00 Disko
 * 02:30 Bussile
 * 03:00 Lõpp
 
-**PS** Värske paar võtab mõõtu teineteise tundmises. Mõtelge selleks välja 1 küsimus mida nende käest küsida, a\`la  
-"Kumb sööb rohkem?"
+**PS** Värske paar võtab mõõtu teineteise tundmises. Mõtelge selleks välja 1 küsimus mida nende käest küsida, a\`la "Kumb sööb rohkem?"
 
 Lisaks toimub ka oksjon. Arveldamine käib sularaha, väärisesemete ja kinnisvara vastu.
 
@@ -81,18 +81,15 @@ Tallinnast tulijad, teil on vedanud - kõigest 45 minutit mõnusat sõitu ja ole
 
 ### Alternatiiv autole (buss)
 
-Kõikidele teile, kellele meeldib väga, kui keegi teine roolib, pakume võimalust tulla bussiga. Jee! Buss võtab kõik soovijad Tallinnast Balti Jaamast kell 14.15 peale ja toimetab öösel tagasi samasse kohta. 
+Kõikidele teile, kellele meeldib väga, kui keegi teine roolib, pakume võimalust tulla bussiga. Jee! Buss võtab kõik soovijad Tallinnast Balti Jaamast kell 14.15 peale ja toimetab öösel tagasi samasse kohta.
 
 ## Olulised numbrid
 
 Kõige olulisem number on muidugi kuupäev, aga juhuks, kui oleme midagi unustanud teada anda või kui kellelgi on täiendavaid küsimusi, siis siin mõned olulised numbrid, kust infot saada:
 
-* Kristjan Oden [**5198 0727**](tel:+37251980727)
-  _peigmees_
-* Johanna Eenma [**5334 0525**](tel:+37253340525)
-  _pruut, varsti Oden_
-* Susanna Eenma [**5341 1011**](tel:+37253411011)
-  _pruudi õde, põhiorgunnija_
+* Kristjan Oden [**5198 0727**](tel:+37251980727) _peigmees_
+* Johanna Eenma [**5334 0525**](tel:+37253340525) _pruut, varsti Oden_
+* Susanna Eenma [**5341 1011**](tel:+37253411011) _pruudi õde, põhiorgunnija_
 
 NB! Pulmapäeval helistada jooksvate küsimuste puhul Susannale. Pruut ja peigmees ei pruugi vastata, sest pulmad, _eksole_.
 
